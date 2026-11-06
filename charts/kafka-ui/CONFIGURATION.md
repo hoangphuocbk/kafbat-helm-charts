@@ -91,7 +91,7 @@
 | `httproute.annotations`    | Additional annotations for the HTTPRoute resource                                                                                                                           | `{}`         |
 | `httproute.labels`         | Labels for the HTTPRoute resource                                                                                                                                           | `{}`         |
 | `httproute.parentRefs`     | Gateway references the HTTPRoute attaches to. At least one parentRef is required when httproute.enabled is true                                                             | `[]`         |
-| `httproute.hostnames`      | Hostnames to match for this HTTPRoute (templated, so you can use Helm expressions). e.g: ["kafka-ui.example.com"]                                                           | `[]`         |
+| `httproute.hostnames`      | Hostnames to match for this HTTPRoute. e.g: ["kafka-ui.example.com"]                                                                                                       | `[]`         |
 | `httproute.pathType`       | Path matching type used by the default rule (PathPrefix, Exact, or RegularExpression)                                                                                       | `PathPrefix` |
 | `httproute.path`           | Path used by the default rule when no custom rules are specified                                                                                                            | `/`          |
 | `httproute.scheme`         | Scheme for the HTTPRoute URL output (http or https)                                                                                                                         | `http`       |

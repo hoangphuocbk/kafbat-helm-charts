@@ -267,7 +267,7 @@ ingress:
 ## Kafka-UI HTTPRoute configuration (Gateway API)
 ## Alternative to Ingress. Only enable this if you have the Gateway API CRDs
 ## installed and a Gateway controller running in your cluster.
-## ref: https://gateway-api.sigs.k8s.io/api-types/httproute/
+## ref: https://gateway-api.sigs.k8s.io/reference/api-types/httproute/
 ##
 httproute:
   ## @param httproute.enabled Enable HTTPRoute (Gateway API) record generation for Kafka-UI
@@ -286,7 +286,7 @@ httproute:
   ##
   parentRefs: []
 
-  ## @param httproute.hostnames [array] Hostnames to match for this HTTPRoute (templated, so you can use Helm expressions). e.g: ["kafka-ui.example.com"]
+  ## @param httproute.hostnames [array] Hostnames to match for this HTTPRoute. e.g: ["kafka-ui.example.com"]
   hostnames: []
 
   ## @param httproute.pathType Path matching type used by the default rule (PathPrefix, Exact, or RegularExpression)
